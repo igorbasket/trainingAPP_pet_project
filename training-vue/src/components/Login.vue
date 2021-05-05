@@ -24,6 +24,10 @@
                 <el-button type="primary" @click="submitForm('dynamicValidateForm')">Submit</el-button>
                 <el-button @click="resetForm('dynamicValidateForm')">Reset</el-button>
             </el-form-item>
+          <el-form-item>
+            <el-button type="primary" @click="submitForm('dynamicValidateForm')">Submit</el-button>
+            <el-button @click="resetForm('dynamicValidateForm')">Reset</el-button>
+          </el-form-item>
         </el-form>
     </div>
 </template>
