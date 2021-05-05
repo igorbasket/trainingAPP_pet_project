@@ -1,0 +1,10 @@
+#Нужно раскоментить перед релизом и переходом в прод
+The pro-test has been solved.
+First, sockjs-node is a JavaScript library that provides cross-browser JavaScript APIs and creates a low-latency, full-duplex communication channel between browsers and web servers.
+If your project does not use sockjs, vuecli3 runs NPM run server and then the network calls an interface all the time:
+http://localhost:8080/sockjs-node/info?t=1556418283950
+Solution: Close this call from the root
+1、node_modules/sockjs-client/dist/sockjs.js
+2. 1605 lines of comments for code
+// self.xhr.send(payload);
+Ps: Shut down after code development is completed, and hot loading is shut down synchronously
